@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stydents</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body class="registerBg">
+
+
+  <div class="box max-w-[475px] rounded-[25px] bg-white flex flex-col items-center justify-center px-[30px] py-[44px]">
+        <div class="flex items-center gap-[12px] mb-[43px]">
+            <div class="h-[39px] w-[6px] bg-[#F8D442]"></div>
+            <h1 class="text-[32px] leading-[39px] font-bold text-[#000] text-center">Admin Students</h1>
+        </div>
+        <h2 class="uppercase text-[22px] leading-[26px] font-semibold text-[#000] text-center">Sign In</h2>
+        <p class="font-normal text-[14px] leanding-[17px] text-[#6C6C6C] text-center pt-[9px] pb-[50px]">Enter your credentials to access your account</p>
+        <form autocomplete="off" class="login-form flex flex-col items-center justify-center">
+            <div class="mb-[20px]">
+                <strong class="font-medium text-[14px] leanding-[17px] text-[#6C6C6C]">Login</strong>
+                <input autocomplete="off" name="username" type="text" required placeholder="Enter your login" class="mt-[10px] placeholder:font-normal placeholder:text-[14px] placeholder:leanding-[0px] w-[415px] outline-none px-[15px] py-[10px] border-[1px] border-solid rounded-[4px] leanding-[0px] text-[18px] text-[#6C6C6C]">
+            </div>
+            <div>
+                <strong class="font-medium text-[14px] leanding-[17px] text-[#6C6C6C]">Password</strong>
+                <input autocomplete="off" name="password" type="password" required placeholder="Enter your password" class="mt-[10px] placeholder:font-normal placeholder:text-[14px] placeholder:leanding-[0px] w-[415px] outline-none px-[15px] py-[10px] border-[1px] border-solid rounded-[4px] leanding-[0px] text-[18px] text-[#6C6C6C]">
+            </div>
+            <button type="submit" class="login-btn w-[415px] h-[44px] text-white font-medium text-[14px] leanding-[17px] bg-[#FEAF00] rounded-[4px] mt-[35px] uppercase">SIGN IN</button>
+        </form>
+        <button class="text-black font-medium text-[14px] leanding-[17px] mt-[11px]">Sign up</button>
+  </div>
+
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+     <script type="text/javascript" src="js/vanilla.js"></script>
+     <script type="text/javascript">
+       VanillaTilt.init(document.querySelector(".box"), {
+         max: 15,
+         speed: 400,
+       });
+     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

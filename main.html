@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stydents</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="flex">
+      <div class="w-[20%] bg-[#F2EAE1]">
+        <div class="pt-[20px] pb-[42px] pl-[35px] w-full">
+          <a href="#"><img src="images/logo.svg" alt="logo"/></a>
+        </div>
+        <div class="px-[38px] py-[34px]">
+          <div class="flex flex-col justify-center items-center">
+            <label class="inline-block w-[128px] rounded-full overflow-hidden mb-[20px] shadow-[0px_1px_8px_0px_#00000040]">
+              <input class="userImg hidden" type="file">
+              <div class="w-[128px] h-[128px] rounded-full">
+                <img class="mx-auto edit-img" width="128px"  src="./images/addImg.png" alt="images">
+              </div>
+            </label>
+            <strong class="username font-bold text-[17px] leanding-[20px] text-black"></strong>
+            <strong class="font-medium text-[14px] leanding-[17px] text-[#FEAF00]">Admin</strong>
+          </div>
+          <div class="flex flex-col justify-between items-center">
+              <button class="flex items-center justify-center gap-[15px] mx-auto mt-[63px] w-[193px] h-[41px] bg-[#FEAF00] rounded-[4px] font-medium text-[14px] leanding-[17px] text-black"><img src="images/buttonIcon.svg" alt="icon">Students</button>
+            <a href="index.html" class="flex items-center justify-center absolute gap-[23px] bottom-[33px] font-medium text-[14px] leanding-[17px] text-black">Logout <img src="images/logOut.svg" alt="icon"></a>
+          </div>
+        </div>
+      </div>
+      <div class="w-[80%] bg-[#f8f8f8] h-[100vh] overflow-y-auto"> 
+        <div class="py-[21px] pl-[30px] pr-[50px] w-full bg-[#F2EAE1] flex justify-between items-center">
+          <img src="images/chevronLeft.svg" alt="icon">
+          <img src="images/bellIcon.svg" alt="icon">
+        </div>
+        <ul class="studentsCard px-[30px] py-[20px]">
+        </ul>
+        
+      </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

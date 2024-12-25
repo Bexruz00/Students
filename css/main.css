@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+/* --------- Register part -------*/
+.registerBg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%);
+    min-height: 100vh;
+}
+/* --------- Register part -------*/
+
+/* ----- students part ----- */
+.addUser{
+    height: 200px;
+    width: 200px;
+    border-radius: 58% 38% 48% 47% / 60% 50% 42% 33% ;
+    background: linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* ----- students part ----- */
+button{
+    transition: .3s;
+}
+
+button:hover{
+    opacity: 0.8;
+}
